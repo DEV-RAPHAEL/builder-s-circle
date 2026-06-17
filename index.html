@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Builders Circle by ART | Execution Community for Founders & Builders</title>
+  <meta name="description" content="Builders Circle by ART (Ajayi Raphael Temitope) is an execution-first community for founders, creators, developers and builders. Apply now to join the accountability room focused on action and daily progress.">
+  <meta name="keywords" content="Builders Circle, Builder's Circle, Builder's Circle by ART, Ajayi Raphael Temitope, execution community, founder accountability, apply now">
+  <meta name="author" content="ART, Ajayi Raphael Temitope">
+  <meta property="og:title" content="Builders Circle by ART — Execution Community for Founders">
+  <meta property="og:description" content="Join Builders Circle by ART (Ajayi Raphael Temitope), a high-performance community where founders and builders share daily progress, support wins, and stay accountable.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Builders Circle by ART — Execution Community for Founders">
+  <meta name="twitter:description" content="Join Builders Circle by ART (Ajayi Raphael Temitope), a high-performance community for founders, creators, developers, and builders.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Founder's Letter */
+    .founders-letter {
+      padding: 6rem 0;
+      background: radial-gradient(circle at 20% 50%, rgba(99,102,241,0.04) 0%, transparent 50%);
+    }
+    .letter-inner {
+      max-width: 820px;
+      margin: 0 auto;
+      background: rgba(13,18,36,0.5);
+      border: 1px solid rgba(99,102,241,0.15);
+      border-radius: 20px;
+      padding: 3.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .letter-inner::before {
+      content: '\201C';
+      position: absolute;
+      top: -1rem;
+      left: 2rem;
+      font-size: 10rem;
+      color: rgba(99,102,241,0.07);
+      font-family: Georgia, serif;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .letter-author {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .author-photo {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid rgba(99,102,241,0.4);
+      box-shadow: 0 0 20px rgba(99,102,241,0.25);
+      flex-shrink: 0;
+    }
+    .author-photo-placeholder {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: white;
+      border: 2px solid rgba(99,102,241,0.4);
+      box-shadow: 0 0 20px rgba(99,102,241,0.25);
+      flex-shrink: 0;
+    }
+    .author-info h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.15rem;
+    }
+    .author-role {
+      font-size: 0.85rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+    .letter-body p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #cbd5e1;
+      margin-bottom: 1.25rem;
+    }
+    .letter-body p:last-child {
+      margin-bottom: 0;
+    }
+    .letter-body strong {
+      color: #f8fafc;
+    }
+    .letter-signature {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--text-secondary);
+    }
+    .letter-signature span {
+      display: block;
+      font-style: normal;
+      font-weight: 700;
+      color: white;
+      font-size: 1.05rem;
+      margin-top: 0.25rem;
+    }
+
+    /* Floating Sticky CTA */
+    .sticky-apply {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 200;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      pointer-events: none;
+    }
+    .sticky-apply.visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: all;
+    }
+    .sticky-apply a {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: white;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: 9999px;
+      box-shadow: 0 8px 30px rgba(99,102,241,0.5);
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .sticky-apply a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(99,102,241,0.65);
+    }
+    .sticky-pulse {
+      width: 8px;
+      height: 8px;
+      background: white;
+      border-radius: 50%;
+      animation: pulse-glow-cyan 2s infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="logo.png" alt="Builders Circle Logo" style="height: 2.4rem; width: auto; border-radius: 6px; box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);">
+        <span>Builders Circle</span>
+        <span class="logo-sub">by ART</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#what-is" class="nav-link">What This Is</a></li>
+        <li><a href="#what-is-not" class="nav-link">What It's Not</a></li>
+        <li><a href="#rules" class="nav-link">Rules</a></li>
+        <li><a href="#warning" class="nav-link">Culture</a></li>
+      </ul>
+      <a href="#apply" class="btn btn-primary">Apply Now</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-tag">
+        <span></span> Execution Over Excuses
+      </div>
+      <h1 class="hero-title">
+        Build More. Grow Faster.<br>
+        <span class="gradient-text">Stay Accountable.</span>
+      </h1>
+      <p class="hero-description">
+        Join a community of founders, creators, developers, marketers, and builders who share daily progress, celebrate wins, and help each other execute.
+      </p>
+      <div class="hero-actions">
+        <a href="#apply" class="btn btn-primary">Apply Now</a>
+      </div>
+      <p class="hero-cta-note">Free to apply · 14/50 founding spots left</p>
+      <div class="hero-counters">
+        <div class="counter-item">
+          <span class="counter-val">14 / 50</span>
+          <span class="counter-lbl">Founding spots left</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-val">94%</span>
+          <span class="counter-lbl">Daily check-in rate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: What This Is -->
+  <section class="what-this-is" id="what-is">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Unbreakable Fundamentals</span>
+        <h2 class="section-title">What This Is</h2>
+        <p class="section-desc">
+          Builders Circle is a high-octane environment built on three simple pillars designed to convert plans into rapid progress.
+        </p>
+      </div>
+
+      <div class="not-grid">
+        <div class="card">
+          <div class="ph-icon" style="background: rgba(99, 102, 241, 0.1); border-color: rgba(99, 102, 241, 0.2); color: var(--primary); width: 3rem; height: 3rem; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem;">🛠️</div>
+          <h3>1. A Community of Executioners</h3>
+          <p>
+            We don't just talk, plan, or read. We ship. Builders Circle is a space specifically curated for people actively building businesses, products, and content pipelines. If you are in the circle, you are execution-first.
+          </p>
+        </div>
+        <div class="card">
+          <div class="ph-icon" style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.2); color: var(--success); width: 3rem; height: 3rem; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem;">🏆</div>
+          <h3>2. Celebrate Every Win</h3>
+          <p>
+            We celebrate both major breakthroughs and the smallest daily victories. Even if you got a "no" on a sales pitch today, at least you reached out. Even if your social post flops, at least you published it. Momentum is built on action.
+          </p>
+        </div>
+        <div class="card">
+          <div class="ph-icon" style="background: rgba(6, 182, 212, 0.1); border-color: rgba(6, 182, 212, 0.2); color: var(--secondary); width: 3rem; height: 3rem; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem;">📈</div>
+          <h3>3. Collaborative Growth Network</h3>
+          <p>
+            We do not grow in isolation. EVERY member is committed to engaging with, testing, and boosting each other's work and social media posts. We turn a collection of individual builders into a collaborative, thriving ecosystem.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: What This Is Not -->
+  <section class="what-this-is-not" id="what-is-not">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: var(--error);">Noise Filter</span>
+        <h2 class="section-title">What This Is Not</h2>
+        <p class="section-desc">
+          To build a great culture, you must be explicit about who doesn't belong here.
+        </p>
+      </div>
+
+      <div class="not-grid">
+        <div class="card not-card">
+          <div class="not-icon">💬</div>
+          <h3>Not a Motivational Group</h3>
+          <p>
+            If you need daily quotes and reminders to start working, this is not the place for you. We focus on execution, systems, and actual product shipping.
+          </p>
+        </div>
+        <div class="card not-card">
+          <div class="not-icon">❌</div>
+          <h3>Not a Networking Spam Chat</h3>
+          <p>
+            We restrict self-promotion, religious or political debates, spam, and cold pitch templates. Everything shared must offer genuine business progress or build-support.
+          </p>
+        </div>
+        <div class="card not-card">
+          <div class="not-icon">👁️</div>
+          <h3>Not for Spectators</h3>
+          <p>
+            This is not a channel to sit back, consume other people's write-ups, and do nothing. You are expected to contribute and support your peer builders.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder's Letter -->
+  <section class="founders-letter" id="founder">
+    <div class="container">
+      <div class="letter-inner">
+        <div class="letter-author">
+          <img src="art.jpg" alt="ART — Founder of Builders Circle" class="author-photo">
+          <div class="author-info">
+            <h4>ART</h4>
+            <span class="author-role">Founder, Builders Circle</span>
+          </div>
+        </div>
+        <div class="letter-body">
+          <p>
+            I built Builders Circle because I kept seeing the same pattern everywhere: smart, capable people stuck in group chats full of motivation quotes, never actually shipping anything.
+          </p>
+          <p>
+            I was one of those people. I'd consume content all day, feel inspired, and go to bed having done nothing. The missing ingredient wasn't knowledge. It wasn't even motivation. <strong>It was accountability — the kind that comes from a room full of people who are actually building.</strong>
+          </p>
+          <p>
+            When you're surrounded by people sharing daily wins — even small ones — something shifts. You stop making excuses. You start publishing. You start reaching out. You start shipping. Not because someone motivated you to, but because the standard of the room demanded it.
+          </p>
+          <p>
+            That's what this circle is. A room with a high standard. You don't have to be the best. You just have to be <strong>in motion</strong>. Come in, show your work, celebrate others, and let the room pull you forward.
+          </p>
+        </div>
+        <div class="letter-signature">
+          Let's build together,
+          <span>— ART</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Community Rules -->
+  <section class="rules-section" id="rules">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: var(--success);">Culture Guardrails</span>
+        <h2 class="section-title">Community Rules</h2>
+        <p class="section-desc">
+          We operate under a simple philosophy: <strong>Build. Share. Support. Grow.</strong> Execution over excuses.
+        </p>
+      </div>
+
+      <div class="rules-grid">
+        <div class="rules-intro">
+          <h3>Culture First, Chats Second</h3>
+          <p>
+            The role of our Community Manager is strictly to guard our environment. We support our fellow builders by reacting to product launches, outreach achievements, content posts, and breakthroughs.
+          </p>
+          <div class="rules-list">
+            <div class="rule-item">
+              <div class="rule-check">✓</div>
+              <div class="rule-details">
+                <h4>Mandatory Check-in Templates</h4>
+                <p>Do not post randomly. We use strict structures to make metrics comparable.</p>
+              </div>
+            </div>
+            <div class="rule-item">
+              <div class="rule-check">✓</div>
+              <div class="rule-details">
+                <h4>Support System</h4>
+                <p>When someone posts a launch, website, or outreach win, others support and boost it.</p>
+              </div>
+            </div>
+            <div class="rule-item">
+              <div class="rule-check">✓</div>
+              <div class="rule-details">
+                <h4>Introduction Rule</h4>
+                <p>Every approved member must share a structured intro to unlock the directory.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Warning: High Performers Zone -->
+  <section class="warning-section" id="warning">
+    <div class="container">
+      <div class="warning-box">
+        <div class="warning-content">
+          <span class="warning-tag">HIGH-PERFORMANCE CULTURE</span>
+          <h2 class="warning-title">Participation expectation</h2>
+          <p class="warning-desc">
+            Inactive members are removed to protect the culture — full details after acceptance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Apply Now (Interactive Qualification Quiz) -->
+  <section class="apply-now" id="apply">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: var(--accent);">Admissions Portal</span>
+        <h2 class="section-title">Apply For Membership</h2>
+        <p class="section-desc">
+          We filter strictly to maintain community value. Step 1 of your application: this quick eligibility quiz.
+        </p>
+      </div>
+
+      <div class="card quiz-container" id="quiz-card">
+        <div class="quiz-progress-wrap">
+          <div class="quiz-progress-line" id="quiz-progress-line"></div>
+        </div>
+        
+        <!-- Quiz Steps -->
+        <div class="quiz-question-container" id="quiz-steps-container">
+          <!-- Step 1 -->
+          <div class="quiz-step active" id="step-1">
+            <h3 class="quiz-question">Which statement matches your current status?</h3>
+            <div class="quiz-opts">
+              <button class="quiz-opt-btn" onclick="selectQuizOption(1, 'builder')">I am actively building a business, product, or content pipeline.</button>
+              <button class="quiz-opt-btn" onclick="selectQuizOption(1, 'motivation')">I want a free community to get motivated to start building.</button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="quiz-step" id="step-2">
+            <h3 class="quiz-question">Do you agree to stay active and support the community?</h3>
+            <p class="quiz-desc-sub">We protect progress by keeping the group engaged and accountable.</p>
+            <div class="quiz-opts">
+              <button class="quiz-opt-btn" onclick="selectQuizOption(2, 'accept')">I accept. Active accountability is exactly what I need to stay focused.</button>
+              <button class="quiz-opt-btn" onclick="selectQuizOption(2, 'reject')">I don't like it. I want to read posts without having to report progress.</button>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="quiz-step" id="step-3">
+            <h3 class="quiz-question">Are you willing to support other builders?</h3>
+            <p class="quiz-desc-sub">Boosting product launches, giving feedback, and celebrating wins.</p>
+            <div class="quiz-opts">
+              <button class="quiz-opt-btn" onclick="selectQuizOption(3, 'yes')">Yes, I want to actively share feedback and lift others up.</button>
+              <button class="quiz-opt-btn" onclick="selectQuizOption(3, 'no')">No, I only want to promote my own services and links.</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-nav">
+          <button class="btn btn-secondary" id="quiz-prev-btn" onclick="prevQuizStep()" style="visibility: hidden;">Back</button>
+          <button class="btn btn-primary" id="quiz-next-btn" onclick="nextQuizStep()" disabled>Next Question</button>
+        </div>
+      </div>
+
+      <!-- Result Screens -->
+      <div class="card quiz-container result-screen" id="qualified-screen">
+        <div class="res-icon success">✅</div>
+        <h3 class="res-title">You're In — Finish Your Application</h3>
+        <p class="res-desc">
+          You match the active culture of Builders Circle. Click below to complete your founding member application on Google Forms. It takes less than 2 minutes.
+        </p>
+        <div style="text-align: center; margin-top: 2rem;">
+          <a
+            href="https://forms.gle/8Y6Zrwmq48rEXEHV6"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+            style="font-size: 1.1rem; padding: 1rem 2.5rem; box-shadow: 0 4px 30px rgba(99,102,241,0.5);"
+          >
+            Apply Now
+          </a>
+          <p style="margin-top: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+            Opens in a new tab &nbsp;·&nbsp; Reviewed within 24 hours
+          </p>
+        </div>
+      </div>
+
+      <div class="card quiz-container result-screen" id="disqualified-screen">
+        <div class="res-icon danger">✕</div>
+        <h3 class="res-title">Application Declined</h3>
+        <p class="res-desc">
+          Builders Circle is strictly an execution-first community. We reject applications that want passive motivation or do not support other members.
+        </p>
+        <button class="btn btn-secondary" onclick="restartQuiz()" style="margin-top: 1rem;">Try Again with Execution Mindset</button>
+      </div>
+
+      <!-- Success submission screen -->
+      <div class="card quiz-container result-screen" id="success-screen">
+        <div class="res-icon success">🎉</div>
+        <h3 class="res-title">Application Submitted!</h3>
+        <p class="res-desc">
+          Thanks for applying! The Community Manager will review your LinkedIn profile and reach out within 24 hours to place you into your Accountability Pod.
+        </p>
+        <a href="#hero" class="btn btn-secondary" onclick="restartQuiz()">Back to Top</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="logo.png" alt="Builders Circle Logo" style="height: 2rem; width: auto; border-radius: 6px; box-shadow: 0 0 10px rgba(99, 102, 241, 0.3); margin-right: 0.5rem;">
+            <span>Builders Circle</span>
+          </div>
+          <p>
+            An execution community protecting accountability culture for founders, developers, creators, and builders.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h5>Community</h5>
+            <ul>
+              <li><a href="#what-is">Philosophy</a></li>
+              <li><a href="#rules">Rules</a></li>
+              <li><a href="#warning">Culture</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h5>Get Involved</h5>
+            <ul>
+              <li><a href="#apply">Apply to Pod</a></li>
+              <li><a href="#rules">Community Values</a></li>
+              <li><a href="#warning">Culture</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Builders Circle. Designed by ART. All rights reserved.</p>
+        <p>Execution over excuses.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Sticky CTA -->
+  <div class="sticky-apply" id="sticky-apply">
+    <a href="#apply">
+      <span class="sticky-pulse"></span>
+      Apply Now
+    </a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
