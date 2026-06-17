@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366f1"/>
-      <stop offset="100%" stop-color="#06b6d4"/>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c853"/>
+      <stop offset="100%" stop-color="#00e676"/>
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="14" fill="#090b14"/>
-  <circle cx="32" cy="32" r="24" fill="url(#g)" opacity="0.18"/>
-  <path d="M22 22h20v4H26v8h14v4H26v10H22V22z" fill="#fff"/>
+  <rect width="64" height="64" rx="12" fill="#000"/>
+  <path d="M12 36c8-14 32-14 40 0" stroke="url(#g2)" stroke-width="6" stroke-linecap="round" fill="none" />
+  <text x="8" y="52" font-family="Outfit, system-ui, sans-serif" font-size="10" fill="#fff">ART</text>
 </svg>
