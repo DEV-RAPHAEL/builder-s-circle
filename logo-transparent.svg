@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Logo Mark: Stylized B -->
+  <g>
+    <rect x="8" y="8" width="42" height="48" rx="6" fill="url(#grad)" opacity="0.12"/>
+    <path d="M18 16h16c6 0 9 2 9 6s-3 5-7 5h-10v6h12c5 0 8 2 8 6s-4 5-9 5H18V16z" fill="url(#grad)" stroke="url(#grad)" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Text: "Builders Circle" -->
+  <text x="60" y="42" font-family="Outfit, system-ui, sans-serif" font-size="24" font-weight="700" fill="#f8fafc" letter-spacing="-0.02em">Builders Circle</text>
+</svg>

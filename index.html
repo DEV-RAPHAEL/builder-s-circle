@@ -13,6 +13,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Builders Circle by ART — Execution Community for Founders">
   <meta name="twitter:description" content="Join Builders Circle by ART (Ajayi Raphael Temitope), a high-performance community for founders, creators, developers, and builders.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <style>
     /* Founder's Letter */
@@ -156,12 +157,24 @@
   </style>
 </head>
 <body>
+  <div class="warning-modal" id="warning-modal" aria-hidden="true">
+    <div class="warning-modal-overlay" id="warning-modal-overlay"></div>
+    <div class="warning-modal-panel" role="dialog" aria-modal="true" aria-labelledby="warning-modal-title">
+      <div class="warning-modal-inner">
+        <span class="warning-modal-badge">Warning</span>
+        <h2 id="warning-modal-title">Before you continue reading</h2>
+        <p class="warning-modal-copy">
+          If you join this community, you may start a business, make more money, become more visible online, and do the boring stuff that grows your business.
+        </p>
+        <button class="btn btn-primary" id="warning-modal-close">Keep reading</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Header -->
-  <header>
     <div class="container nav-container">
       <div class="logo">
-        <img src="logo.png" alt="Builders Circle Logo" style="height: 2.4rem; width: auto; border-radius: 6px; box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);">
+        <img src="logo-transparent.svg" alt="Builders Circle Logo" style="height: 2.4rem; width: auto;">
         <span>Builders Circle</span>
         <span class="logo-sub">by ART</span>
       </div>
@@ -477,7 +490,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="logo">
-            <img src="logo.png" alt="Builders Circle Logo" style="height: 2rem; width: auto; border-radius: 6px; box-shadow: 0 0 10px rgba(99, 102, 241, 0.3); margin-right: 0.5rem;">
+            <img src="logo-transparent.svg" alt="Builders Circle Logo" style="height: 2rem; width: auto; margin-right: 0.5rem;">
             <span>Builders Circle</span>
           </div>
           <p>

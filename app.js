@@ -11,6 +11,7 @@ const STATE = {
 // INITIALIZATION
 document.addEventListener("DOMContentLoaded", () => {
   updateQuizView();
+  showWarningModal();
 
   // Sticky Apply button: appear after user scrolls 400px
   const stickyBtn = document.getElementById("sticky-apply");
@@ -23,7 +24,32 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }, { passive: true });
   }
+
+  const modalClose = document.getElementById("warning-modal-close");
+  const modalOverlay = document.getElementById("warning-modal-overlay");
+  if (modalClose) {
+    modalClose.addEventListener("click", closeWarningModal);
+  }
+  if (modalOverlay) {
+    modalOverlay.addEventListener("click", closeWarningModal);
+  }
 });
+
+function showWarningModal() {
+  const modal = document.getElementById("warning-modal");
+  if (!modal) return;
+  modal.classList.add("visible");
+  document.body.classList.add("modal-open");
+  modal.setAttribute("aria-hidden", "false");
+}
+
+function closeWarningModal() {
+  const modal = document.getElementById("warning-modal");
+  if (!modal) return;
+  modal.classList.remove("visible");
+  document.body.classList.remove("modal-open");
+  modal.setAttribute("aria-hidden", "true");
+}
 
 // ADMISSIONS QUIZ LOGIC
 window.selectQuizOption = function(stepNum, val) {
